@@ -1,0 +1,69 @@
+* {
+    font-family: "CommutersSans-Regular";
+}
+
+a {
+    text-decoration: none;
+    color: unset;
+}
+
+header {
+    height: 100vh;
+    background: url(../images/home_page_hero_bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    justify-content: center;
+}
+
+header p {
+    position: absolute;
+    bottom: 450px;
+    text-align: center;
+    font-size: 40px;
+    color: rgb(92, 92, 92);
+
+    & span {
+        font-family: "CommutersSans-ExtraBold";
+    }
+}
+
+.nav-link {
+    font-family: "CommutersSans-SemiBold" !important;
+}
+
+.bg-project {
+    height: 268.5px;
+    background: url(../images/bg.png);
+    background-position: center right;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+footer h1 {
+    font-family: "CommutersSans-Bold";
+}
+
+.project_parent {
+    position: relative !important;
+}
+
+.project_name {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.655);
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.project_name:hover {
+    opacity: 1;
+    transition: 0.5s;
+}
