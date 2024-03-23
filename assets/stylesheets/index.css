@@ -7,12 +7,37 @@ a {
     color: unset;
 }
 
+.fixed_name {
+    position: fixed;
+    z-index: 20000;
+    font-family: "CommutersSans-Bold";
+    text-align: center;
+    width: 100vw;
+    margin-top: 23px;
+    font-size: 20px;
+
+    @media (max-width: 992px) {
+        text-align: start;
+    }
+}
+
+@media (min-width: 992px) {
+    .invisible {
+        text-align: start !important;
+    }
+
+    .d-inline-block {
+        text-align: center;
+    }
+}
+
+.position-fixed {
+    text-align: center;
+    width: 100%;
+}
+
 header {
-    height: 100vh;
-    background: url(../images/home_page_hero_bg.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: bottom;
+    height: 600px;
     justify-content: center;
 }
 
@@ -22,13 +47,40 @@ header p {
     text-align: center;
     font-size: 40px;
     color: rgb(92, 92, 92);
+    padding: 0 470px;
 
     & span {
         font-family: "CommutersSans-ExtraBold";
     }
 
+    @media (max-width: 1800px) {
+        padding: 0 400px;
+    }
+
+    @media (max-width: 1700px) {
+        padding: 0 350px;
+        top: 250px;
+    }
+
+    @media (max-width: 1300px) {
+        padding: 0 275px;
+    }
+
+    @media (max-width: 1200px) {
+        padding: 0 200px;
+    }
+
+    @media (max-width: 1000px) {
+        padding: 0 100px;
+    }
+
     @media (max-width: 768px) {
         font-size: 35px;
+        top: 250px;
+    }
+
+    @media (max-width: 600px) {
+        top: 200px;
     }
 
     @media (max-width: 500px) {
