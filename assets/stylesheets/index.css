@@ -12,9 +12,12 @@ a {
     z-index: 20000;
     font-family: "CommutersSans-Bold";
     text-align: center;
-    width: 100vw;
+    width: fit-content;
     margin-top: 23px;
     font-size: 20px;
+    left: calc(50% - 100px);
+    width: 200px;
+    color: #4B4B4D;
 
     @media (max-width: 992px) {
         text-align: start;
@@ -45,9 +48,9 @@ header p {
     position: absolute;
     top: 300px;
     text-align: center;
-    font-size: 40px;
+    font-size: 50px;
     color: rgb(92, 92, 92);
-    padding: 0 470px;
+    padding: 0 360px;
 
     & span {
         font-family: "CommutersSans-ExtraBold";
@@ -96,21 +99,19 @@ header p {
     font-family: "CommutersSans-SemiBold" !important;
 }
 
-.bg-project {
-    height: 268.5px;
-    background: url(../images/bg.png);
-    background-position: center right;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
 
-footer h3 {
+footer h5, #contactForm h3 {
     font-family: "CommutersSans-Bold";
+    color: #4B4B4D;
 }
 
 .project_parent {
     position: relative !important;
     min-height: 500px;
+
+    @media (max-width: 1100px) {
+        min-height: 350px !important;
+    }
 }
 
 .project_name {
@@ -136,4 +137,40 @@ footer h3 {
 
 .project_container span {
     font-family: "CommutersSans-Bold";
+}
+
+.about_header {
+    background: url(../images/about_bg.png);
+    background-size: cover;
+    background-position: center bottom;
+    height: 100vh;
+    margin: 0 75px;
+}
+
+.bi {
+    color: #606062;
+}
+
+.custom_my-5 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    transition: 0.5s;
+}
+
+.custom_my-2 {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    transition: 0.5s;
+}
+
+.custom_py-5 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    transition: 0.5s;
+}
+
+.custom_py-2 {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    transition: 0.5s;
 }
