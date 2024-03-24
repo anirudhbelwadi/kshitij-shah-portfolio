@@ -123,6 +123,14 @@ header p {
         padding: 15px;
     }
 
+    @media (max-height: 1000px) {
+        top: 190px;
+    }
+
+    @media (max-height: 900px) {
+        top: 150px;
+    }
+
 }
 
 .nav-link ms-lg-3 {
