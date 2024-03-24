@@ -217,3 +217,8 @@ footer h5, #contactForm h3 {
     box-shadow: none;
     border: #dee2e6 solid 1px !important;
 }
+
+.form-group sup {
+    color: red !important;
+    font-size: 12px;
+}

@@ -54,21 +54,36 @@
                 Reach out and let's build your story.
             </h3>
             <div class="form-group mb-4">
-                <label for="name">Name</label>
-                <input type="text" class="form-control mt-2" id="name" name="Name" placeholder="Enter Name">
+                <label for="name">
+                    Name
+                    <sup>
+                        *
+                    </sup>
+                </label>
+                <input required type="text" class="form-control mt-2" id="name" name="Name" placeholder="Enter Name">
             </div>
             <div class="form-group mb-4">
-                <label for="email">Email address</label>
-                <input type="email" class="form-control mt-2" id="email" name="Email address" placeholder="Enter Email">
+                <label for="email">
+                    Email address
+                    <sup>
+                        *
+                    </sup>
+                </label>
+                <input required type="email" class="form-control mt-2" id="email" name="Email address"
+                    placeholder="Enter Email">
             </div>
             <div class="form-group mb-4">
                 <label for="contact">Contact No.</label>
-                <input type="text" class="form-control mt-2" id="contact" name="Contact No."
-                    placeholder="+1 XXX XXX XXXX">
+                <input type="text" class="form-control mt-2" id="contact" name="Contact No." placeholder="XXXXX XXXXX">
             </div>
             <div class="form-group mb-4">
-                <label for="message">Message</label>
-                <textarea class="form-control mt-2" name="Message" id="message" rows="5"
+                <label for="message">
+                    Message
+                    <sup>
+                        *
+                    </sup>
+                </label>
+                <textarea required class="form-control mt-2" name="Message" id="message" rows="5"
                     placeholder="Enter Message"></textarea>
             </div>
             <button type="submit" class="btn btn-secondary">Submit</button>
