@@ -230,3 +230,13 @@ footer h5, #contactForm h3 {
     color: red !important;
     font-size: 12px;
 }
+
+.sticky_project {
+    position: sticky !important;
+    top: 100px;
+    height: fit-content;
+
+    @media (max-width: 992px) {
+        position: static !important;
+    }
+}
